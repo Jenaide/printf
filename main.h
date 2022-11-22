@@ -4,6 +4,17 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * struct print - printing various structs
+ * @t: char type
+ * @f: the function
+ */
+typedef struct print
+{
+	char *t;
+	int (*f)(va_list);
+} print_t;
+
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_c(va_list c);
