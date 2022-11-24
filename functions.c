@@ -43,7 +43,7 @@ int print_string(va_list types, char buffer[], int flags, int width, int precisi
 	UNUSED(size);
 	if (string == NULL)
 	{
-		string == "(null)";
+		string = "(null)";
 		if (precision >= 6)
 			string = "      ";
 	}
