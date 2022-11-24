@@ -71,7 +71,7 @@ int print_string(va_list types, char buffer[], int flags, int width, int precisi
 			return (width);
 		}
 	}
-	return (write(1, string, lenght));
+	return (write(1, string, length));
 }
 
 /********** prints the % sign***********/
@@ -121,7 +121,7 @@ int print_int(va_list types, char buffer[], int flags, int width, int precision,
 	if (a == 0)
 		buffer[z--] = '0';
 
-	buffer[BUFFER_SIZE - 1] = '\0';
+	buffer[BUFF_SIZE - 1] = '\0';
 	num = (unsigned long int)a;
 
 	if (a < 0)

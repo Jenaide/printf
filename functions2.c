@@ -79,7 +79,7 @@ int print_non_printable(va_list types, char buffer[], int flags, int width, int 
 		if (is_printable(string[x]))
 			buffer[x + offset] = string[x];
 		else
-			offset += append_hexa_code(str[i], buffer, i + offset);
+			offset += append_hexa_code(string[x], buffer, x + offset);
 		x++;
 	}
 
